@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parking Slot Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h2>Parking Slot Booking</h2>
+
+<input type="text" id="vehicleNumber" placeholder="Vehicle Number (TN01U4545)">
+<input type="text" id="ownerPhone" placeholder="Owner Phone Number">
+
+<select id="vehicleType">
+<option value="">Select Vehicle Type</option>
+<option value="Bike">Bike</option>
+<option value="Car">Car</option>
+<option value="Van">Van</option>
+<option value="Bus">Bus</option>
+</select>
+
+<input type="number" id="hours" placeholder="How Many Hours Parking?">
+<input type="time" id="returnTime">
+
+<button onclick="checkSlot()">Check Slot Availability</button>
+
+<div id="slotResult" class="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
